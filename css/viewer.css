@@ -1,0 +1,83 @@
+@import url('fonts.css');
+
+body {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;;
+}
+
+.viewer-navbar, .viewer-left, .viewer-right {
+    font-family: 'RobotoFlex';
+}
+
+
+.viewer-navbar {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    grid-column: 1/4;
+    grid-row: 1;
+    margin-bottom: 25px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+
+.navbar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.style-chooser{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.button{
+    display: flex;
+    outline: 0;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #24292e;
+    background-color: #fafbfc;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+}
+
+.navigator{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.viewer-left {
+    grid-column: 1;
+}
+
+.viewer-center {
+    margin-top: 100px;
+    grid-column: 2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.viewer-right {
+    grid-column: 3;
+}

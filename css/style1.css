@@ -1,0 +1,203 @@
+@import url('fonts.css');
+
+.cv-body {
+    font-family: 'EBGaramond';
+    font-size: 1.2vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.header{
+    width: 100%;
+    background-color: #2a2a2a;
+    color: #f4f4f9;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px #adadad;
+    grid-column: 1/3;
+}
+
+.header .name{
+    font-size: 2.5vw;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: #E5E5E5;
+    padding: 10px;
+}
+
+.image {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image img {
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid #2a2a2a;
+}
+
+.sidebar .title{
+    font-size: 1.6vw;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #adadad;
+}
+
+.introduction > .content{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.sidebar > *{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.softskills{
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.softskills .softskill{
+    display: inline-block;
+    text-align: center;
+    border : solid 1px #3F3F3F;
+    border-radius: 5px;
+    
+    padding: 4px;
+}
+
+.informations > *:not(.title), .languages > *:not(.title), .hobbies > *:not(.title){
+    display: list-item;
+    margin-left : 1em;
+}
+
+.middlepage{
+    background-color: white;
+    padding: 20px;
+}
+
+.education > .title, .experiences > .title, .skills > .title{
+    font-size: 1.6vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #adadad;
+}
+
+.skillgroup {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.skillgroup > .title{
+    font-weight : bold;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.subskills {
+    padding-left: 20px;
+    border-left: solid 1px black;
+    font-style: italic;
+}
+
+.cat {
+    font-weight : bold;
+    font-style: normal;
+}
+
+.diploma {
+    display : grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 10px;
+    margin-bottom : 10px;
+    font-size: 1.4vw;
+}
+
+.diploma > *:not(.year){
+    grid-column: 2/5;
+    padding-left: 20px;
+    border-left: solid 1px black;
+}
+
+.diploma > .year{
+    grid-column: 1/2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.diploma > .type{
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.diploma > .university{
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.diploma > .faculty{
+    font-style: italic;
+    font-size: 1.2vw;
+}
+
+.diploma > .title{
+    font-size: 1.2vw;
+}
+
+.diploma > .location{
+    font-size: 1.2vw;
+}
+
+
+.experience {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.experience > *:not(.date){
+    grid-column: 2/3;
+    padding-left: 20px;
+    border-left: solid 1px black;
+}
+
+.experience > .date{
+    grid-column: 1/2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.experience > .title{
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.experience > .company{
+    font-style: italic;
+    font-size: 1.2vw;
+}
+
+.experience > .subject{
+    font-size: 1.2vw;
+}
+
+.experience > .location{
+    font-size: 1.2vw;
+}
+

@@ -1,0 +1,176 @@
+@import url('fonts.css');
+
+.cv-body {
+    font-family: 'EBGaramond';
+    font-size: 1.2vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    color : black;
+    background-color: #f7f7ff;
+    /*background-color: black;*/
+}
+
+
+
+.header {
+    width: 100%;
+    text-align: center;
+    grid-column: 2/3;
+    height: 200px;
+    grid-row : 1;
+
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+}
+
+.header .name{
+    font-size: 2.5vw;
+    border-bottom: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.header > * {
+    text-shadow: 0px 0px 20px rgba(0,0,0, 0.5);
+}
+
+.image {
+    height : 200px;
+    text-align: center;
+}
+
+.image > img {
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+}
+
+.image > img, .sidebar > *:not(.image), .middlepage > *{
+    box-shadow: 0 0 15px 5px rgba(0,0,0, 0.2);
+}
+
+.sidebar {
+    grid-column: 1/2;
+    grid-row : 1/3;
+    padding: 0.05px;
+}
+
+.sidebar .title {
+    font-weight: bold;
+    width: 100%;
+    background-color: #F75C03;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.sidebar > .introduction > .title{
+    display: none;
+}
+
+.sidebar > *:not(.image){
+    padding : 0.05px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #F4D58D;
+    color : black;
+    border-radius: 10px;
+}
+
+.sidebar > .introduction {
+    padding-top: 100px;
+    margin-top: -80px;
+}
+
+.sidebar > * > *:not(.title){
+    margin: 10px;
+}
+
+.informations > *:not(.title), .languages > *:not(.title), .hobbies > *:not(.title), .softskills > *:not(.title){
+    display: list-item;
+    margin-left : 2em;
+}
+
+.middlepage {
+    grid-column: 2/3;
+    grid-row : 2;
+    padding : 0.05px;
+}
+
+.middlepage > * {
+    padding : 0.05px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #292F36;
+    color : white;
+    border-radius: 10px;
+}
+
+.middlepage > * > .title {
+    font-weight: bold;
+    width: 100%;
+    background-color: #519E8A;
+    color : black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.middlepage > * > *:not(.title) {
+    margin: 10px;
+}
+
+.diploma, .skillgroup, .experience {  
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.diploma .year, .skillgroup > .title, .experience > .date {
+    border-bottom: solid 1px grey;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.diploma > .type, .experience > .title {
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+
+.diploma > .university, .experience > .company{
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.diploma > .faculty{
+    font-style: italic;
+    font-size: 1.2vw;
+}
+
+.diploma > .title,  .experience > .subject{
+    font-size: 1.2vw;
+}
+
+.diploma > .location, .experience > .location{
+    font-size: 1.2vw;
+}
+
+.cat {
+    font-weight : bold;
+    font-style: normal;
+}
+

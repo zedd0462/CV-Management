@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <link rel="stylesheet" href="css/search.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="data/data.js"></script>
+    <script src="js/search.js"></script>
+    <title>CV Search</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">CV Search</div>
+        <div class="sub-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search" oninput="search()"/>
+                <select class="search-by" id="search-by">
+                    <option value="name">Name</option>
+                    <option value="tech">Technology</option>
+                </select>
+                </div>
+            </div>
+            <div class="search-results" id="search-results">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

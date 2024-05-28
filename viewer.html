@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/viewer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="data/data.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/cv-utils.js"></script>
+    <script src="js/viewer.js" defer></script>
+    <title>CV Viewer</title>
+</head>
+<body>
+    <div class="viewer-navbar">
+        <div class="navbar-title">CV Viewer</div>
+        <div class="style-chooser">
+            <div class="button" id="style1">Style 1</div>
+            <div class="button" id="style2">Style 2</div>
+            <div class="button" id="style3">Style 3</div>
+            <div class="button" id="style4">Style 4</div>
+            <div class="button" id="style5">Style 5</div>
+        </div>
+        <div class="navigator">
+            <div class="button" id="previous">Previous</div>
+            <div class="button" id="next">Next</div>
+        </div>
+    </div>
+    <div class="viewer-left"></div>
+    <div class="viewer-center" id="viewer-content">CV not loaded</div>
+    <div class="viewer-right"></div>
+</body>
+</html>
