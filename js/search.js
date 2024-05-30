@@ -31,6 +31,7 @@ function findByTechnology(data, technology){
     let keyword = technology.toLowerCase();
     let added = false;
     for (const cvEntry of data) {
+        //console.log("Searching in " + cvEntry.profile.firstName + " " + cvEntry.profile.lastName);
         added = false;
         for (const skillgroup of cvEntry.technologySkills) {
             if(skillgroup.skill.toLowerCase().includes(keyword)){
