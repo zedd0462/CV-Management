@@ -1662,7 +1662,8 @@ let data = [
             }
         ],
         interests: ["FootBall", "Gym", "Gaming"]
-    }
+    },
+    
 ]
 //debug
 console.log("# data file loaded, size: " + data.length);

@@ -1,3 +1,6 @@
+function listButton(){
+    location.href = "list.html";
+}
 
 function viewAllButton(){
     location.href = "viewer.html";
@@ -10,5 +13,4 @@ function searchButton(){
 function addNewButton(){
 
 }
-
 
