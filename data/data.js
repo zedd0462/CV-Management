@@ -3054,7 +3054,6 @@ let data = [
 ]
 
 try {
-    console.log("# loading additional data");
     let additionalData = localStorage.getItem("data");
     if (additionalData) {
         additionalData = JSON.parse(additionalData);
@@ -3063,6 +3062,3 @@ try {
 } catch (e) {
     alert("Error while loading additional data: " + e.message);
 }
-
-console.log("# data file loaded, size: " + data.length);
-console.log(data);

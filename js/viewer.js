@@ -1,5 +1,3 @@
-
-
 let currentIndex = 0;
 
 function viewerLoadCV(index) {
@@ -87,8 +85,3 @@ function getStartingCVIndex(){
 }
 
 init();
-
-
-
-
-
