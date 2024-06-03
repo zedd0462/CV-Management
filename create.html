@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/create.css">
     <title>CV Creation</title>
+    <script src="js/create.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="title">Create a new CV</div>
+        <div class="sub-container">
+            <div class="form-container">
+                <div class="form-section" id="profile-section">
+                    <div class="form-title">Profile</div>
+                    <div class="form-row">
+                        <div class="form-label">Photo</div>
+                        <input type="file" id="photo" class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">First Name</div>
+                        <input type="text" id="first-name" class="form-input" placeholder="First Name">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Last Name</div>
+                        <input type="text" id="last-name" class="form-input" placeholder="Last Name">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Birthday</div>
+                        <input type="date" id="birthday" class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Phone</div>   
+                        <input type="tel" id="phone" class="form-input" placeholder="Phone">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Email</div>
+                        <input type="email" id="email" class="form-input" placeholder="Email">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Address</div>
+                        <input type="text" id="address" class="form-input" placeholder="Address">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Professional Summary</div>
+                        <textarea id="professional-summary" class="form-input" placeholder="Professional Summary"></textarea>
+                    </div>
+                    <div class="form-row" id="links">
+                        <div class="form-label" >Links</div>
+                        <input type="text" id="link1" class="form-input" placeholder="Link">
+                    </div>
+                    <div class="input-add">
+                        <div id="add-link" onclick="addLink()">Add Link</div>
+                    </div>
+                </div>
+                <div class="form-section" id="education-section">
+                    <div class="form-title">Education</div>
+                    <div class="education-row">
+                        <div class="form-label">Diploma</div>
+                        <input type="text" id="diploma1" class="form-input" placeholder="Diploma">
+                        <div class="form-label">Organisation</div>
+                        <input type="text" id="organisation1" class="form-input" placeholder="Organisation">
+                        <div class="form-label">Year</div>
+                        <input type="text" id="year1" class="form-input" placeholder="Year">
+                    </div>
+                    <div class="input-add">
+                        <div id="add-education" onclick="addEducation()">Add Education</div>
+                    </div>
+                </div>
+                <div class="form-section" id="technology-skill-section">
+                    <div class="form-title">Technology Skills</div>
+                    <div class="skill-row">
+                        <div class="form-label">Skill</div>
+                        <input type="text" id="skill1" class="form-input" placeholder="Skill">
+                        <div class="form-label">Details (Separated by Comma)</div>
+                        <textarea id="details1" class="form-input" placeholder="Details"></textarea>
+                    </div>
+                    <div class="input-add">
+                        <div id="add-skill" onclick="addSkill()">Add Skill</div>
+                    </div>
+                </div>
+                <div class="form-section" id="experience-section">
+                    <div class="form-title">Experience</div>
+                    <div class="experience-row">
+                        <div class="form-label">Type</div>
+                        <input type="text" id="experience-type1" class="form-input" placeholder="Type">
+                        <div class="form-label" >Organisation</div>
+                        <input type="text" id="experience-organisation1" class="form-input" placeholder="Organisation">
+                        <div class="form-label">Title</div>
+                        <input type="text" id="experience-title1" class="form-input" placeholder="Title">
+                        <div class="form-label">Technologies (Separated by Comma)</div>
+                        <textarea id="experience-technologies1" class="form-input" placeholder="Technologies"></textarea>
+                        <div class="form-label">Year</div>
+                        <input type="text" id="experience-year1" class="form-input" placeholder="Year">
+                        <div class="form-label">Duration</div>
+                        <input type="text" id="experience-duration1" class="form-input" placeholder="Duration">
+                    </div>
+                    <div class="input-add">
+                        <div id="add-skill" onclick="addExperience()">Add Experience</div>
+                    </div>
+                </div>
+                <div class="form-section" id="softskills-section">
+                    <div class="form-title">Soft Skills</div>
+                    <div class="softskills-row">
+                        <div class="form-label">Soft Skills(Comma Separated)</div>
+                        <textarea id="soft-skills" class="form-input" placeholder="Soft Skills"></textarea>
+                    </div>
+                </div>
+                <div class="form-section" id="language-section">
+                    <div class="form-title">Languages</div>
+                    <div class="language-row">
+                        <div class="form-label">Language</div>
+                        <input type="text" id="language1" class="form-input" placeholder="Language">
+                        <div class="form-label">Level</div>
+                        <input type="text" id="language-level1" class="form-input" placeholder="Level">
+                        <div class="form-label">Certification</div>
+                        <input type="text" id="language-certification1" class="form-input" placeholder="Certification">
+                        <div class="form-label">Experience</div>
+                        <input type="text" id="language-experience1" class="form-input" placeholder="Experience">
+                    </div>
+                    <div class="input-add">
+                        <div id="add-language" onclick="addLanguage()">Add Language</div>
+                    </div>
+                </div>
+                <div class="form-section" id="interests-section">
+                    <div class="form-title">Interests</div>
+                    <div class="interests-row">
+                        <div class="form-label">Interests(Comma Separated)</div>
+                        <textarea id="interests" class="form-input" placeholder="Interests"></textarea>
+                    </div>
+                </div>
+                <div class="form-section" id="submit-section">
+                    <div class="submit-row">
+                        <div id="create-cv" onclick="submit()">Create CV</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

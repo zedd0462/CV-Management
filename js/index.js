@@ -11,6 +11,6 @@ function searchButton(){
 }
 
 function addNewButton(){
-
+    location.href = "create.html"
 }
 

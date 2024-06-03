@@ -1665,5 +1665,16 @@ let data = [
     },
     
 ]
-//debug
+
+try{
+    console.log("# loading additional data");
+    let additionalData = localStorage.getItem("data");
+    if(additionalData) {
+        additionalData = JSON.parse(additionalData);
+        data = data.concat(additionalData);
+    }
+}catch(e) {
+    alert("Error while loading additional data");
+}
+
 console.log("# data file loaded, size: " + data.length);

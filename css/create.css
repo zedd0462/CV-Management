@@ -1,0 +1,165 @@
+@import url("fonts.css");
+
+body {
+    font-family: "RobotoFlex";
+    margin:0;
+	display:flex;
+	height:100vh;
+	align-items:center;
+    background-color: #F1F5FF;
+}
+
+.container{
+    width: 60vw;
+    height: 37vw;
+    margin: 0 auto;
+    overflow: auto;
+    border-radius: 20px;
+	background-color: #F1F5FF;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    padding-top : 3%;
+    margin-bottom: 10px;
+    height: 5vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;;
+    background-color: #0400AF;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    margin-top: -30px;
+    padding-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #F1F5FF;
+}
+
+.form-section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.form-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.form-label::after{
+    content : ":";
+}
+
+#profile-section .form-row {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 5px;
+}
+
+.input-add div {
+    height: 3vw;
+    background-color: #0400AF;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin: 0.25vw;
+    grid-column: 2/3;
+}
+
+.input-add {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+}
+
+#links > .form-input{
+    grid-column: 2/3;
+    margin-top: 5px;
+}
+
+.education-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.education-row > .form-input{
+    grid-row: 2;
+}
+
+.education-row > .form-label{
+    grid-row: 1;
+}
+
+.skill-row, .experience-row{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 5px;
+}
+
+.skill-row > .form-input, .experience-row > .form-input{
+    margin-bottom: 10px;
+}
+
+.education-row, .skill-row, .experience-row, .softskills-row, .language-row, .interests-row {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.softskills-row, .interests-row {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 5px;
+}
+
+.language-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.language-row > .form-input{
+    grid-row: 2;
+}
+
+.language-row > .form-label{
+    grid-row: 1;
+}
+
+#create-cv{
+    width: 100%;
+    height: 5vw;
+    border-radius: 20px;
+    background-color: #0400AF;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+    margin-bottom: 20px;
+}
+
+/*
+<div class="form-section" id="submit-section">
+                    <div class="submit-row">
+                        <button id="create-cv">Create CV</button>
+                    </div>
+                </div>
+*/
