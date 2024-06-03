@@ -44,8 +44,12 @@ function init(){
     });
     const nextButton = document.getElementById('next');
     const previousButton = document.getElementById('previous');
+    const firstButton = document.getElementById('first');
+    const lastButton = document.getElementById('last');
     nextButton.addEventListener('click', nextCV);
     previousButton.addEventListener('click', previousCV);
+    firstButton.addEventListener('click', firstCV);
+    lastButton.addEventListener('click', lastCV);
 }
 
 function nextCV(){
@@ -55,6 +59,16 @@ function nextCV(){
 
 function previousCV(){
     currentIndex = (currentIndex - 1 + data.length) % data.length;
+    viewerLoadCV(currentIndex);
+}
+
+function firstCV(){
+    currentIndex = 0;
+    viewerLoadCV(currentIndex);
+}
+
+function lastCV(){
+    currentIndex = data.length - 1;
     viewerLoadCV(currentIndex);
 }
 
